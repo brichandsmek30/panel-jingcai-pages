@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>皇冠体育 · 专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: #f7f7f7;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    /* 极简留白框架 */
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* 横幅 —— 杂志风格留白大字 */
+    .hero {
+      margin-bottom: 3.5rem;
+      border-bottom: 2px solid #d4d4d4;
+      padding-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+
+    .hero .sub {
+      font-size: 1rem;
+      color: #6b6b6b;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-top: 0.25rem;
+    }
+
+    /* 背景说明 —— 衬线感的简短引文块 */
+    .context-box {
+      background: #ffffff;
+      border-left: 4px solid #b0b0b0;
+      padding: 1.5rem 1.8rem;
+      margin-bottom: 3rem;
+      font-size: 1.05rem;
+      color: #2c2c2c;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .context-box p {
+      margin-bottom: 0.6rem;
+    }
+
+    .context-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 三段核心内容 */
+    .section-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2.8rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .article-block {
+      border-bottom: 1px solid #e2e2e2;
+      padding-bottom: 2rem;
+    }
+
+    .article-block:last-of-type {
+      border-bottom: none;
+    }
+
+    .article-block h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.9rem;
+      color: #1a1a1a;
+    }
+
+    .article-block p {
+      font-size: 1rem;
+      color: #3a3a3a;
+      margin-bottom: 0.85rem;
+    }
+
+    .article-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .article-block .meta-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      color: #8a8a8a;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      border: 1px solid #d0d0d0;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      font-weight: 400;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #d4d4d4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+      color: #4a4a4a;
+    }
+
+    .footer-note .site-link {
+      font-weight: 450;
+      text-decoration: none;
+      color: #1a1a1a;
+      border-bottom: 1px solid #b0b0b0;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .footer-note .site-link:hover {
+      border-bottom-color: #1a1a1a;
+      color: #000;
+    }
+
+    .footer-note .hint {
+      font-size: 0.85rem;
+      color: #8a8a8a;
+      letter-spacing: 0.02em;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 480px) {
+      .page {
+        padding: 2rem 1.2rem 3rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .context-box {
+        padding: 1.2rem 1.4rem;
+        font-size: 0.95rem;
+      }
+      .article-block h2 {
+        font-size: 1.2rem;
+      }
+      .footer-note {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- 横幅 —— 杂志专题标题 -->
+    <header class="hero">
+      <h1>皇冠体育</h1>
+      <div class="sub">Sports · Perspective · Continuity</div>
+    </header>
+
+    <!-- 背景说明 —— 简述主题背景 -->
+    <div class="context-box">
+      <p>体育赛事的叙事从不局限于比分。从场地灯光到战术演变，从个人突破到团队协作，每一帧都承载着经验与预判的交汇。</p>
+      <p>皇冠体育以长期视角关注竞技领域的结构变化，围绕赛事数据、运动科学及观众行为，提供更具纵深的信息整合。</p>
+    </div>
+
+    <!-- 三段自然介绍（杂志专题式） -->
+    <div class="section-grid">
+      <div class="article-block">
+        <span class="meta-tag">01 · 视野</span>
+        <h2>赛局之外的逻辑</h2>
+        <p>现代体育早已超越单纯的身体对抗，战术建模、球员负荷管理、以及实时数据分析，正在重新定义赛场的边界。皇冠体育持续追踪这些看不见的变量，尝试为爱好者提供一种更冷静的观看方式。</p>
+        <p>从足球的预期进球到篮球的空间效率，从网球的发球策略到赛车进站时机，细节往往决定长期判断的准确度。</p>
+      </div>
+
+      <div class="article-block">
+        <span class="meta-tag">02 · 沉淀</span>
+        <h2>信息密度与克制表达</h2>
+        <p>在信息过载的时代，筛选比收集更重要。皇冠体育关注赛事历史脉络、运动员成长曲线以及联赛制度的演变，不依赖短时流量叙事，而是尝试将分散的片段串联成可参考的知识链条。</p>
+        <p>无论是五大联赛的周期特征，还是新兴项目的规则更迭，保持结构化的梳理本身就是一种深度服务。</p>
+      </div>
+
+      <div class="article-block">
+        <span class="meta-tag">03 · 适配</span>
+        <h2>场景与节奏的选择</h2>
+        <p>不同用户对体育内容的需求差异明显：有人追求实时动态，有人偏爱复盘分析，也有人只希望快速获取赛程框架。皇冠体育在内容组织上注重层次划分，让专业读者与普通爱好者都能找到对应的切入角度。</p>
+        <p>节奏感同样是用户体验的一部分——避免过度堆砌，留出思考空间，让信息真正服务于阅读。</p>
+      </div>
+    </div>
+
+    <!-- 页尾访问提示 —— 链接自然嵌入句子 -->
+    <footer class="footer-note">
+      <span>
+        了解更多赛事纵深内容，可前往 <a href="https://main-huangguansports.com" class="site-link">皇冠体育</a> 阅读专题与数据更新。
+      </span>
+      <span class="hint">持续关注 · 理性参考</span>
+    </footer>
+  </div>
+</body>
+</html>
